@@ -120,12 +120,12 @@ LOGIC:
 12.	I have tested this for 500 MB file and processing and display is very quick in less than 1 second
 
 
-
 Assumptions:
 
-Board is infinite while # of live cells is finite. Even if the file is very large in GB or TB, by reading line by line and considering only live cells, this can support extremly large world with sparse values amd live cells can be stored in memory (RAM).
+Board is infinite while # of live cells is finite. Even if the file is very large in GB or TB, by reading line by line and considering only live cells, this can support extremely large world with sparse values and live cells can be stored in memory (RAM).
 
 My logic is based on this assumption
 
-However for case when file is very large and many many live cells, I can design it differently when I will read 3 lines at a time from disk and apply the rules on those line and save the data back on disk
+However, for case when file is very large and many many live cells, I can design it differently when I will read 3 lines at a time from disk and apply the rules on those line and save the data back on disk
+
 
