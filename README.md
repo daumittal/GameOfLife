@@ -102,20 +102,21 @@ MY SOLUTION:
 
 
 Time Complexity: O(no of live cells) - Ignoring the extract initial state
+
 Space Complexity: O(no of live cells)
 
 LOGIC:
 1. Capturing only live cells from the file and finding the 8 neighbours only for live cells.
-2. Storing this locatio of live cells in dictionary gives constant space complexity for reading the cell
+2. Storing this location of live cells in dictionary gives constant space complexity for reading the cells
 3. Supporting processing very large file with finite no of live cells
 4. Reading large file line by line using parrallel computing and ignoring all DEAD cells
 5. Processing live cells in parallel
-6. Returing output for only live cells to the client application (Console) and client will draw both live and dead celll by calculating location. This saves lot of time ss we dont need to store the entire board in memory which is not feasible if the board of extreamly large
-7  Supports both file input and in memory matrics 
+6. Returing output for only live cells to the client application (Console) and client will draw both live and dead celll by calculating location. This saves lot of time as we dont need to store the entire board in memory which is not feasible if the board of extreamly large
+7  Supports both input parametersm including file and two dimentional array in in-memory
 8. Supports multiple state changes using function parameter
-9. Supports stop processing next generation if state is not changes
-10.Support both continous state generation or with delay using function parameter
-11.Unit test cases projecyt for business rules validation and some sample validation
+9. Supports stop processing next generation if state is not changed
+10.Supportd both contineous state generation or with delay using function parameter
+11.Unit test cases project for business rules validation and some sample validations
 12.I have tested this for 500 MB file and processing and display is very quick in less than 1 second
 
 Assumptions:
