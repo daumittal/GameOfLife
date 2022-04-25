@@ -112,6 +112,7 @@ LOGIC:
 4. Reading large file line by line using parrallel computing and ignoring all DEAD cells
 5. Processing live cells in parallel
 6. Returing output for only live cells to the client application (Console) and client will draw both live and dead celll by calculating location. This saves lot of time as we dont need to store the entire board in memory which is not feasible if the board of extreamly large
+
 7  Supports both input parametersm including file and two dimentional array in in-memory
 8. Supports multiple state changes using function parameter
 9. Supports stop processing next generation if state is not changed
