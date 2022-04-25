@@ -114,9 +114,11 @@ LOGIC:
 6.	Returning output for only live cells to the client application (Console) and client will draw both live and dead cells by calculating location. This saves lot of time as we don’t need to store the entire board in memory which is not feasible if the board of extremely large
 7.	Supports both input parameters including file and two-dimensional array in in-memory
 8.	Supports multiple state changes using function parameter
-9.	Supports stop processing next generation if state is not changed. Supports both continuous state generation and with delay using function parameter.
-10.	Unit test cases project for business rules validation and some sample validations
-11.	I have tested this for 500 MB file and processing and display is very quick in less than 1 second
+9.	Supports stop processing next generation if state is not changed. 
+10.	Supports both continuous state generation and with delay using function parameter.
+11.	Unit test cases project for business rules validation and some sample validations
+12.	I have tested this for 500 MB file and processing and display is very quick in less than 1 second
+
 
 
 Assumptions:
