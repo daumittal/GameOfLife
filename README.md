@@ -117,6 +117,7 @@ LOGIC:
 9. Supports stop processing next generation if state is not changed
 10.Supportd both contineous state generation or with delay using function parameter
 11.Unit test cases project for business rules validation and some sample validations
+
 12.I have tested this for 500 MB file and processing and display is very quick in less than 1 second
 
 Assumptions:
