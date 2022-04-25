@@ -115,7 +115,7 @@ LOGIC:
 7  Supports both input parametersm including file and two dimentional array in in-memory
 8. Supports multiple state changes using function parameter
 9. Supports stop processing next generation if state is not changed
-10. Supports both contineous state generation or with delay using function parameter
+10. Supports both continuous state generation or with delay using function parameter
 11. Unit test cases project for business rules validation and some sample validations
 12. I have tested this for 500 MB file and processing and display is very quick in less than 1 second
 
