@@ -107,15 +107,25 @@ Space Complexity: O(no of live cells)
 
 LOGIC:
 •	Capturing only live cells from the file and finding the 8 neighbors only for live cells.
+
 •	Storing this location of live cells in dictionary gives constant space complexity for reading the cells
+
 •	Supporting processing very large file with finite no of live cells
+
 •	Reading large file line by line using parallel computing and ignoring all DEAD cells
+
 •	Processing live cells in parallel
+
 •	Returning output for only live cells to the client application (Console) and client will draw both live and dead cells by calculating location. This saves lot of time as we don’t need to store the entire board in memory which is not feasible if the board of extremely large
+
 •	Supports both input parameters including file and two-dimensional array in in-memory
+
 •	Supports multiple state changes using function parameter
+
 •	Supports stop processing next generation if state is not changed. Supports both continuous state generation and with delay using function parameter.
+
 •	Unit test cases project for business rules validation and some sample validations
+
 •	I have tested this for 500 MB file and processing and display is very quick in less than 1 second
 
 Assumptions:
