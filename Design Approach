@@ -1,0 +1,28 @@
+MY SOLUTION:
+
+Time Complexity: O(no of live cells) - Ignoring the extract initial state
+
+Space Complexity: O(no of live cells)
+
+LOGIC:
+
+1.	Capturing only live cells from the file and finding the 8 neighbors only for live cells.
+2.	Storing this location of live cells in dictionary gives constant space complexity for reading the cells
+3.	Supporting processing very large file with finite no of live cells
+4.	Reading large file line by line using parallel computing and ignoring all DEAD cells
+5.	Processing live cells in parallel
+6.	Returning output for only live cells to the client application (Console) and client will draw both live and dead cells by calculating location. This saves lot of time as we don’t need to store the entire board in memory which is not feasible if the board of extremely large
+7.	Supports both input parameters including file and two-dimensional array in in-memory
+8.	Supports multiple state changes using function parameter
+9.	Supports stop processing next generation if state is not changed. 
+10.	Supports both continuous state generation and with delay using function parameter.
+11.	Unit test cases project for business rules validation and some sample validations
+12.	I have tested this for 500 MB file and processing and display is very quick in less than 1 second
+
+Assumptions:
+
+Board is infinite while # of live cells is finite. Even if the file is very large in GB or TB, by reading line by line and considering only live cells, this can support extremely large world with sparse values and live cells can be stored in memory (RAM).
+
+My logic is based on this assumption
+
+However, for case when file is very large and many many live cells, I can design it differently when I will read 3 lines at a time from disk and apply the rules on those line and save the data back on disk
